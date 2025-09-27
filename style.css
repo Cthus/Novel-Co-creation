@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: #fff;
+    font-family: "微软雅黑", Arial, sans-serif;
+    flex-direction: column;
+    /* 确保 body 里的元素垂直排列 */
+}
+
+.btn {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    padding: 3px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #fff;
+    color: brown;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.13);
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #ffd700;
+    color: #8b4513;
+    transform: translateY(-2px) scale(1.04);
+}
+
+
+label {
+    color: #fff8dc;
+    font-size: 15px;
+    margin-bottom: 6px;
+    align-self: flex-start;
+}
+
+
+input,
+textarea {
+    margin-bottom: 18px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    width: 320px;
+    background: #fff8dc;
+    color: #3e2723;
+    outline: none;
+    transition: box-shadow 0.2s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 2px #ffd700;
+    background: #fffbe7;
+}
+
+textarea {
+    min-height: 120px;
+    max-height: 320px;
+    resize: vertical;
+    font-size: 15px;
+}

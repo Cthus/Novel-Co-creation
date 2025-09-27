@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>createNewContent</title>
+    <style>
+        label {
+            color: #fff8dc;
+            font-size: 35px;
+            margin-bottom: 6px;
+            align-self: center;
+        }
+
+        textarea {
+            min-height: 400px;
+            width: 70%;
+            resize: vertical;
+            font-size: 15px;
+            padding: 12px 16px;
+            margin: 50px 0;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <label for="novel-content">{novelname}新的内容</label>
+    <textarea id="novel-content" placeholder="你要写些什么内容呢，亲！"></textarea>
+    <button class="btn" onclick="saveContent">提交</button>
+</body>
+</html>
