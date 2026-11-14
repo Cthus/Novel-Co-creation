@@ -1,66 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>new.Novel co-creation</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .container {
-            background: rgba(255,255,255,0.10);
-            border-radius: 16px;
-            box-shadow: 4px 4px 16px rgba(0,0,0,0.18);
-            padding: 40px 50px 30px 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 420px;
-        }
-
-        h2 {
-            color: #ffe4b5;
-            margin-bottom: 24px;
-            letter-spacing: 2px;
-        }
-
-        .btn-bar {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="btn-bar">
-            <button class="btn" onclick="location.href='start.html'">返回</button>
-        </div>
-        <h2>创建新小说</h2>
-        <label for="title">小说标题</label>
-        <input type="text" id="title" placeholder="请输入小说标题" />
-
-        <label for="author">初创者</label>
-        <input type="text" id="author" placeholder="请输入你的名字" />
-
-        <label for="description">小说规则 / 简介</label>
-        <textarea id="description" placeholder="请输入小说规则或简介（类似readme）&#10;示例：主人公不能杀人，幕后黑手其实是卖拉面的大叔……"></textarea>
-
-        <button class="btn" id="createBtn" onclick="createNovel()">提交</button>
-    </div>
-    <script>
-        function createNovel() {
-            const title = document.getElementById('title').value;
-            const author = document.getElementById('author').value;
-            const description = document.getElementById('description').value;
-            if (!title.trim() || !author.trim() || !description.trim()) {
-                alert("请填写完整信息！");
-                return;
-            }
-            alert("提交成功");
-            console.log("标题:", title);
-            console.log("作者:", author);
-            console.log("简介:", description);
-        }
-    </script>
-</body>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>创建作品 · 共创书房</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="new">
+    <script src="store.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
